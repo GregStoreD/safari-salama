@@ -1,4 +1,4 @@
-import { View, Image, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native'
+import { View, Image, FlatList, TouchableOpacity, StyleSheet } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 import Constants from 'expo-constants';
 import tw from 'tailwind-rn'
@@ -13,7 +13,7 @@ const data = [
   {
     id: "45",
     title: "Nos offres",
-    imageSource: require('../assets/images/car.jpg'),
+    imageSource: require('../assets/images/Safari-Salama.png'),
     screen: "Home",
   },
 ];
@@ -27,7 +27,7 @@ const NavOptions = () => {
     >
       <Image
         source={item.imageSource}
-        style={{ width: 150, height: 150, margin: 5 }}
+        style={{ width: 150, height: 150, margin: 5, borderRadius: 90 }}
       />
     </TouchableOpacity>
   );
