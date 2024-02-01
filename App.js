@@ -1,11 +1,9 @@
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-expo'
 import { StyleSheet, SafeAreaView, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack';
-import   TabNavigation from './Navigations/TabNavigation'
 import   MapScreen from './Screens/MapScreen';
-import Profile from './Screens/Profile';
+import   Profile from './Screens/Profile';
 import { Provider} from 'react-redux'
 import { useFonts } from 'expo-font'
 import   Login from './Screens/Login'
